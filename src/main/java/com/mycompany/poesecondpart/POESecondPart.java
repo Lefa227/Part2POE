@@ -14,11 +14,16 @@ public class POESecondPart {
 
     public static void main(String[] args) {
         
-        String username = JOptionPane.showInputDialog("Enter Username:");
-        String password = JOptionPane.showInputDialog("Enter Password:");
+        String firstname = JOptionPane.showInputDialog(null, "Please Enter your first name:");
+        String lastname = JOptionPane.showInputDialog(null, "Please Enter your last name:");
+        String username = JOptionPane.showInputDialog("Please Enter Username:");
+        String password = JOptionPane.showInputDialog("Please Enter Password:");
+        
+         // Create an instance of Register with the username, password, first name, and last name
+        Register register = new Register();
 
         // Simple login check
-        if (!username.equals("admin") || !password.equals("password")) {
+        if (!username.equals("Lef_2") || !password.equals("Mestalla@2023")) {
             JOptionPane.showMessageDialog(null, "Login Failed. Exiting.");
             System.exit(0);
         }
