@@ -11,6 +11,9 @@ import javax.swing.JOptionPane;
  * @author RC_Student_lab
  */
 public class POESecondPart {
+     private static boolean isLoggedIn = false;
+    private static Task[] tasks;
+    private static int currentTaskCount = 0;
 
     public static void main(String[] args) {
         
